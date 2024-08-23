@@ -34,7 +34,7 @@ Each principle has its own folder containing:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/solid-principles-typescript.git
+   git clone https://github.com/bralash/solid-principle-typescript.git
    ```
 2. Navigate to each principle's folder
 3. Read the README.md for an explanation of the principle
