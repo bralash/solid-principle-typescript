@@ -9,7 +9,7 @@ interface User {
     email: string;
 }
 
-class UserManager {
+class UserManagerExample {
     private users: User[] = [];
 
     // Add a user to the database
@@ -32,16 +32,16 @@ class UserManager {
 
 // Usage
 
-const userManager = new UserManager();
+const manager = new UserManagerExample();
 
-const newUser: User = {
+const anotherUser: User = {
     id: "1",
     name: "Emmanuel Asaber",
     email: "emmanuelasaber@gmail.com",
 };
-userManager.addUser(newUser);
+manager.addUser(anotherUser);
 
-const user = userManager.getUser("1");
+const user = manager.getUser("1");
 if (user) {
     // The UserManager is now responsible for both user management and email sending
     // This makes the class less focused and harder to maintain
