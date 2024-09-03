@@ -12,4 +12,13 @@ interface PremiumUserProfile extends BasicUserProfile {
     getPaymentInfo(): string;
 }
 
+class BasicUser implements BasicUserProfile {
+    getName(): string {
+        return "Basic User Name";
+    }
+
+    getEmail(): string {
+        return "basicuser@example.com";
+    }
+}
 
