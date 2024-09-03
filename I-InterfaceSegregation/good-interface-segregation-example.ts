@@ -22,3 +22,22 @@ class BasicUser implements BasicUserProfile {
     }
 }
 
+
+class SuperUser implements PremiumUserProfile {
+    getName(): string {
+        return "Premium User Name";
+    }
+
+    getEmail(): string {
+        return "premiumuser@example.com";
+    }
+
+    getAddress(): string {
+        return "Premium User Address";
+    }
+
+    getPaymentInfo(): string {
+        return "Premium User Payment Info";
+    }
+}
+
