@@ -41,3 +41,8 @@ class SuperUser implements PremiumUserProfile {
     }
 }
 
+
+// Usage example
+const premiumUser = new PremiumUser();
+console.log(premiumUser.getName());
+console.log(premiumUser.getAddress());
