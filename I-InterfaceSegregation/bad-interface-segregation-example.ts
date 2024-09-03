@@ -46,4 +46,14 @@ class PremiumUser implements UserProfile {
     }
 }
 
+// Usage example
+const User = new StandardUser();
+console.log(User.getName());
+console.log(User.getEmail());
+
+try {
+    console.log(User.getAddress());
+} catch (error) {
+    console.error(error.message);
+}
 
