@@ -21,7 +21,7 @@ This approach ensures that classes only implement the methods they need, making 
 
 In the `bad-interface-segregation-example.ts` file, we show a violation of ISP:
 
-- **UserProfile** interface: This interface defines methods that are not needed by all types of users. For example, `BasicUser` is forced to implement methods like `getAddress` and `getPaymentInfo`, which it doesn't need.
+- **UserProfile** interface: This interface defines methods that are not needed by all types of users. For example, `StandardUser` is forced to implement methods like `getAddress` and `getPaymentInfo`, which it doesn't need.
 
 This violation leads to unnecessary implementation complexity and makes the system harder to maintain.
 
