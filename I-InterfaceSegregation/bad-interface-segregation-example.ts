@@ -9,4 +9,24 @@ interface UserProfile {
     getPaymentInfo(): string;
 }
 
+class StandardUser implements UserProfile {
+    getName(): string {
+        return "User name";
+    }
+
+    getEmail(): string {
+        return "user@example.com";
+    }
+
+    // BasicUser does not need these methods, but is forced to implement them
+    getAddress(): string {
+        throw new Error("Basic user does not have an address");
+    }
+
+    getPaymentInfo(): string {
+        throw new Error("Basic user does not have payment info");
+    }
+}
+
+
 
