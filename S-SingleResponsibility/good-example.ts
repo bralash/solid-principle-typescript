@@ -41,6 +41,6 @@ const newUser: User = {
 
 userManager.addUser(newUser);
 const retrievedUser = userManager.getUser("1");
-if(user) {
-    emailService.sendEmail(user.email, "Welcome to our app", "Thank you for signing up!");
+if(retrievedUser) {
+    emailService.sendEmail(retrievedUser.email, "Welcome to our app", "Thank you for signing up!");
 }
